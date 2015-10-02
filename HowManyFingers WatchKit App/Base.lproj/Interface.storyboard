@@ -10,10 +10,10 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HowManyFingers_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label alignment="left" text="How many Fingers?" id="yHW-AG-SDp">
+                        <label alignment="left" text="Num Fingers? " id="yHW-AG-SDp">
                             <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
                         </label>
-                        <slider width="1" alignment="left" value="1" maximum="5" steps="5" id="Odo-Iw-fgH">
+                        <slider width="1" alignment="left" value="0.59999999999999998" steps="5" id="Odo-Iw-fgH">
                             <connections>
                                 <action selector="sliderChanged:" destination="AgC-eL-Hgc" id="Ack-yL-OOe"/>
                             </connections>
@@ -23,10 +23,11 @@
                                 <action selector="guessMade" destination="AgC-eL-Hgc" id="17e-eH-spJ"/>
                             </connections>
                         </button>
-                        <label width="136" alignment="left" text="Label" id="vsN-Eb-h5w"/>
+                        <label width="136" alignment="left" textAlignment="center" id="vsN-Eb-h5w"/>
                     </items>
                     <connections>
                         <outlet property="userGuess" destination="Odo-Iw-fgH" id="sd1-7p-HK1"/>
+                        <outlet property="userGuessValue" destination="yHW-AG-SDp" id="Mng-b2-dLc"/>
                         <outlet property="winLossLabel" destination="vsN-Eb-h5w" id="Wwe-pB-fCk"/>
                     </connections>
                 </controller>
